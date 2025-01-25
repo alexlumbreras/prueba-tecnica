@@ -1,0 +1,85 @@
+/* global.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5em 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  color: #0070f3;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #005bb5;
+  text-decoration: underline;
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: #0070f3;
+  color: white;
+  border: 1px solid #0070f3;
+  border-radius: 4px;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: #005bb5;
+  border-color: #005bb5;
+}
+
+input,
+textarea,
+select {
+  padding: 0.5em;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #0070f3;
+  background-color: #f0f9ff;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 0.75em;
+  text-align: left;
+}
