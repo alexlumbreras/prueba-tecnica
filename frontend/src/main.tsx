@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style.css';
-
-const App = () => {
-  return <h1>Hello, React with Vite and TypeScript!</h1>;
-};
+import { App } from './App/App';
 
 ReactDOM.createRoot(document.getElementById('app') as HTMLElement).render(
   <React.StrictMode>
