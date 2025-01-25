@@ -4,21 +4,26 @@ import tseslint from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
 import pluginReact from 'eslint-plugin-react';
 import pluginPrettier from 'eslint-plugin-prettier';
+import pluginReactHooks from 'eslint-plugin-react-hooks';
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
   {
-    files: ['**/*.{js,ts,jsx,tsx}'],
+    files: ['src/**/*.{js,ts,jsx,tsx}'],
     languageOptions: {
       parser: tsParser,
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: globals.browser,
+      parserOptions: {
+        project: './tsconfig.json',
+      },
     },
     plugins: {
       '@typescript-eslint': tseslint,
       react: pluginReact,
       prettier: pluginPrettier,
+      'react-hooks': pluginReactHooks,
     },
     rules: {
       ...pluginJs.configs.recommended.rules,
@@ -34,7 +39,7 @@ export default [
       'react-hooks/exhaustive-deps': 'warn',
       'react/no-array-index-key': 'error',
       '@typescript-eslint/strict-boolean-expressions': 'error',
-      'no-magic-numbers': ['warn'],
+      'no-magic-numbers': ['warn', { ignore: [0, 1] }],
     },
     settings: {
       react: {
