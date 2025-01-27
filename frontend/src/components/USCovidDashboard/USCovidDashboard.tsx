@@ -28,6 +28,10 @@ export const USCovidDashboard: React.FC = () => {
     return <div>Loading data...</div>;
   }
 
+  if (covidData.length === 0) {
+    return <div>No data</div>;
+  }
+
   return (
     <div>
       <h1>COVID Data in the US 🦠</h1>
