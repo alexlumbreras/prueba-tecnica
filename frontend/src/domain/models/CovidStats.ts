@@ -1,5 +1,5 @@
 export interface CovidStats {
-  date: string;
+  date: Date;
   cases: number;
   deaths: number;
   tests: number;
