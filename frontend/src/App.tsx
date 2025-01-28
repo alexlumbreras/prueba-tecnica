@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { HomePage } from './pages/HomePage';
+import { HomePage } from './views/HomePage/HomePage';
 import { USCovidDashboard } from './components/USCovidDashboard/USCovidDashboard';
 
 export const App: React.FC = () => {
