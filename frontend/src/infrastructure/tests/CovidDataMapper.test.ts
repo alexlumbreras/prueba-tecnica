@@ -13,7 +13,7 @@ describe('mapCovidData', () => {
       .build();
 
     const expectedResult: CovidStats = {
-      date: '2025-01-01',
+      date: new Date('2025-01-01'),
       cases: 100000,
       deaths: 1500,
       tests: 200000,
@@ -33,7 +33,7 @@ describe('mapCovidData', () => {
       .build();
 
     const expectedResult: CovidStats = {
-      date: '2025-01-01',
+      date: new Date('2025-01-01'),
       cases: 0,
       deaths: 0,
       tests: 0,

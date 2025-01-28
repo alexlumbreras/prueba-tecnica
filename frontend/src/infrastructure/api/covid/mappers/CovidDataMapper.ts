@@ -5,7 +5,7 @@ export const mapCovidData = (data: Stats): CovidStats => {
   const { date, cases, outcomes, testing } = data;
 
   return {
-    date,
+    date: new Date(date),
     cases: cases.total.value ?? 0,
     deaths: outcomes.death.total.value ?? 0,
     tests: testing.total.value ?? 0,
