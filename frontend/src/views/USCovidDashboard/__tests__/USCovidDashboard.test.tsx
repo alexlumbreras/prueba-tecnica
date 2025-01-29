@@ -9,6 +9,9 @@ describe('USCovidDashboard Component', () => {
   });
 
   it('should render title', async () => {
+    const covidData = [{ date: new Date(), cases: 0, deaths: 0, tests: 0 }];
+    vi.spyOn(covidService, 'getCovidStats').mockResolvedValueOnce(covidData);
+
     render(<USCovidDashboard />);
 
     expect(
