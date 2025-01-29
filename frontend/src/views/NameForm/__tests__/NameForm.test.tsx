@@ -70,9 +70,7 @@ describe('NameForm', () => {
 
     searchName('Alex');
 
-    expect(
-      await screen.findByText('An error occurred while fetching the data.')
-    ).toBeVisible();
+    expect(await screen.findByText('An error occurred')).toBeVisible();
   });
 });
 
