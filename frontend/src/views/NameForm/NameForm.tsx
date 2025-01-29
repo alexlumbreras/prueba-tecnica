@@ -49,7 +49,7 @@ export const NameForm: React.FC = () => {
           className="input"
         />
         <button type="submit" disabled={loading} className="button">
-          {loading ? 'Loading...' : 'Submit'}
+          {loading ? 'Loading...' : 'Search'}
         </button>
       </form>
 
