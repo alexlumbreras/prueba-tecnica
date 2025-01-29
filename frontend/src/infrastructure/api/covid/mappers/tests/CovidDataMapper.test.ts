@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
-import { CovidStatsDTOBuilder } from '../api/covid/builders/CovidStatsDTOBuilder';
-import { CovidStats } from '../../domain/models/CovidStats';
-import { mapCovidData } from '../api/covid/mappers/CovidDataMapper';
+import { CovidStatsDTOBuilder } from '../../builders/CovidStatsDTOBuilder';
+import { CovidStats } from '../../../../../domain/models/CovidStats';
+import { mapCovidData } from '../CovidDataMapper';
 
 describe('mapCovidData', () => {
   it('should correctly map Stats to CovidStats', () => {
