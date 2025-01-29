@@ -1,0 +1,94 @@
+/* reset.css */
+
+/* Eliminar márgenes, rellenos y bordes en todos los elementos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Eliminar el espacio extra en los elementos de lista */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* Normalizar el comportamiento de los enlaces (quitar subrayado) */
+a {
+  text-decoration: none;
+  color: inherit; /* Asegura que el enlace herede el color del padre */
+}
+
+/* Normalizar el estilo de los botones */
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer; /* Establece el puntero en el cursor */
+}
+
+/* Evitar márgenes extra en encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Establecer una apariencia consistente en los inputs, selects, textarea */
+input,
+textarea,
+select,
+button {
+  outline: none;
+  background-color: transparent;
+}
+
+/* Establecer line-height consistente en el body */
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+/* Eliminar bordes y márgenes en campos de formulario */
+input,
+textarea,
+select {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Evitar bordes no deseados en elementos de formulario */
+input,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Eliminar bordes predeterminados en las tablas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Establecer un tamaño de fuente por defecto en HTML */
+html {
+  font-size: 100%; /* Tamaño base de la fuente en el navegador */
+}
+
+/* Evitar que los formularios tengan un estilo predeterminado de los navegadores */
+input[type='checkbox'],
+input[type='radio'],
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
